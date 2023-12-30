@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "layanans",
+  "info": {
+    "singularName": "layanan",
+    "pluralName": "layanans",
+    "displayName": "Layanan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_layanan": {
+      "type": "string"
+    },
+    "harga": {
+      "type": "decimal"
+    },
+    "kd_layanan": {
+      "type": "string"
+    }
+  }
+}

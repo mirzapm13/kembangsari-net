@@ -1,0 +1,132 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pengajuans",
+  "info": {
+    "singularName": "pengajuan",
+    "pluralName": "pengajuans",
+    "displayName": "Pengajuan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tgl_pengajuan": {
+      "type": "date"
+    },
+    "biaya_bulanan": {
+      "type": "decimal"
+    },
+    "biaya_tambahan": {
+      "type": "decimal"
+    },
+    "tgl_approve": {
+      "type": "date"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "ok",
+        "pending",
+        "tolak"
+      ],
+      "default": "pending"
+    },
+    "nama": {
+      "type": "string"
+    },
+    "tgl_lahir": {
+      "type": "date"
+    },
+    "ktp": {
+      "type": "string"
+    },
+    "nama_perusahaan": {
+      "type": "string"
+    },
+    "npwp": {
+      "type": "string"
+    },
+    "no_hp": {
+      "type": "string"
+    },
+    "no_telp": {
+      "type": "string"
+    },
+    "fax": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "alamat_tagih": {
+      "type": "string"
+    },
+    "provinsi_tagih": {
+      "type": "string"
+    },
+    "kab_tagih": {
+      "type": "string"
+    },
+    "kec_tagih": {
+      "type": "string"
+    },
+    "kel_tagih": {
+      "type": "string"
+    },
+    "rtrw_tagih": {
+      "type": "string"
+    },
+    "alamat_pasang": {
+      "type": "string"
+    },
+    "provinsi_pasang": {
+      "type": "string"
+    },
+    "kab_pasang": {
+      "type": "string"
+    },
+    "kec_pasang": {
+      "type": "string"
+    },
+    "kel_pasang": {
+      "type": "string"
+    },
+    "rtrw_pasang": {
+      "type": "string"
+    },
+    "kategori_pelanggan": {
+      "type": "string"
+    },
+    "ip": {
+      "type": "string"
+    },
+    "subnet": {
+      "type": "string"
+    },
+    "gateway": {
+      "type": "string"
+    },
+    "mac_address": {
+      "type": "string"
+    },
+    "produk_sebelum": {
+      "type": "string"
+    },
+    "pelanggan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pelanggan.pelanggan",
+      "inversedBy": "pengajuan"
+    },
+    "layanan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::layanan.layanan"
+    },
+    "petugas": {
+      "type": "string"
+    }
+  }
+}

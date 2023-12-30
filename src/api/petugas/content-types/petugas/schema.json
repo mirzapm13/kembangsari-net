@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "petugases",
+  "info": {
+    "singularName": "petugas",
+    "pluralName": "petugases",
+    "displayName": "Petugas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "kd_petugas": {
+      "type": "string"
+    }
+  }
+}
